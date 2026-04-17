@@ -3,34 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simon Says Game</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <main class="game-container">
-      <h1>Simon Says</h1>
-      <p class="subtitle">Watch the pattern and repeat it.</p>
+    <main class="game">
+      <h1 class="js-heading">Simon Says</h1>
 
-      <section class="scoreboard">
-        <p>Round: <span id="round">0</span></p>
-        <p>High Score: <span id="high-score">0</span></p>
+      <button class="js-start-button start-button">Start</button>
+
+      <p class="js-status status hidden">Press start to begin.</p>
+
+      <section class="pad-container js-pad-container unclickable">
+        <button class="pad pad-red js-pad-red" data-color="red" aria-label="Red pad"></button>
+        <button class="pad pad-green js-pad-green" data-color="green" aria-label="Green pad"></button>
+        <button class="pad pad-blue js-pad-blue" data-color="blue" aria-label="Blue pad"></button>
+        <button class="pad pad-yellow js-pad-yellow" data-color="yellow" aria-label="Yellow pad"></button>
       </section>
-
-      <section class="board" aria-label="Simon Says game board">
-        <button class="pad green" id="green" data-color="green" aria-label="Green pad"></button>
-        <button class="pad red" id="red" data-color="red" aria-label="Red pad"></button>
-        <button class="pad yellow" id="yellow" data-color="yellow" aria-label="Yellow pad"></button>
-        <button class="pad blue" id="blue" data-color="blue" aria-label="Blue pad"></button>
-      </section>
-
-      <section class="controls">
-        <button id="start-btn">Start Game</button>
-        <button id="reset-btn">Reset</button>
-      </section>
-
-      <p id="message" class="message">Press Start to play!</p>
     </main>
 
-    <script src="script.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
