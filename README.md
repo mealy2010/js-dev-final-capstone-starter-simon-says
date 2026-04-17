@@ -9,6 +9,7 @@ This version features a **custom beach-themed design**, a fun **Pacifico font**,
 ---
 
 ## 🚀 Live Demo
+<img width="937" height="1503" alt="capstone" src="https://github.com/user-attachments/assets/bd24efa0-25bb-47bc-8762-02ab06f84ae5" />
 
 👉 https://mealy2010.github.io/js-dev-final-capstone-starter-simon-says/
 
