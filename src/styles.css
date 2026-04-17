@@ -9,19 +9,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #111827, #1f2937);
+
+  /* 🌴 Beach Background */
+  background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
 }
 
+/* Game Container */
 .game {
   text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
 }
 
+/* Title */
 .js-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
+/* Start Button */
 .start-button {
   padding: 12px 24px;
   border: none;
@@ -31,12 +47,20 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: transform 0.2s ease;
 }
 
+.start-button:hover {
+  transform: scale(1.05);
+}
+
+/* Status Text */
 .status {
   margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
+/* Game Board */
 .pad-container {
   display: grid;
   grid-template-columns: repeat(2, 150px);
@@ -44,14 +68,23 @@ body {
   justify-content: center;
 }
 
+/* Pads */
 .pad {
   height: 150px;
   border-radius: 20px;
   border: none;
-  opacity: 0.85;
+  opacity: 0.9;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Hover Glow Effect */
+.pad:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Colors */
 .pad-red {
   background: #ef4444;
 }
@@ -68,15 +101,33 @@ body {
   background: #eab308;
 }
 
+/* Active Pad */
 .activated {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
 }
 
+/* Utility Classes */
 .hidden {
   display: none;
 }
 
 .unclickable {
   pointer-events: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .pad-container {
+    grid-template-columns: repeat(2, 120px);
+  }
+
+  .pad {
+    height: 120px;
+  }
+
+  .js-heading {
+    font-size: 2rem;
+  }
 }
