@@ -1,143 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
-
-html {
-  background: url('../assets/background.png') no-repeat center center fixed;
+* {
   box-sizing: border-box;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
 }
 
 body {
-  color: yellow;
-  font-family: 'Rubik Microbe', sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #ffffff;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  height: 100vh;
   align-items: center;
 }
 
-main {
-  background-color: #000;
-  padding: 40px;
+.game-container {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 24px;
 }
 
 h1 {
-  text-align: center;
-  font-size: 40px;
+  margin-bottom: 8px;
+  font-size: 2.5rem;
 }
 
-.game-controls {
-  text-align: center;
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #d1d5db;
 }
 
-.start-button {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: yellow;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid yellow;
-  cursor: pointer;
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 12px 18px;
+  border-radius: 12px;
 }
 
-.start-button:hover {
-  color: greenyellow;
-  font-size: 18px;
-  border-color: greenyellow;
-  transform: rotate(5deg);
-}
-
-.status {
-  font-size: 22px;
-}
-
-.pad-container {
+.board {
   display: grid;
-  grid-template-rows: 200px 200px;
-  grid-template-columns: 200px 200px;
-  grid-gap: 5px;
-  margin: 20px;
+  grid-template-columns: repeat(2, 160px);
+  grid-template-rows: repeat(2, 160px);
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
-.pad-red {
-  border-top-left-radius: 200px;
-  background-color: red;
+.pad {
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
 }
 
-.pad-red:hover,
-.pad-red:focus {
-  background-color: #ff451a;
-  transform: rotate(-5deg);
+.pad:hover {
+  transform: scale(1.03);
 }
 
-.pad-red:active,
-.pad-red.activated {
-  background-color: #ff5c36;
-  transform: translateY(10px);
+.pad:disabled {
+  cursor: not-allowed;
 }
 
-.pad-green {
-  border-top-right-radius: 200px;
-  background-color: green;
+.green {
+  background-color: #22c55e;
 }
 
-.pad-green:hover,
-.pad-green:focus {
-  background-color: #8cc218;
-  transform: rotate(5deg);
+.red {
+  background-color: #ef4444;
 }
 
-.pad-green:active,
-.pad-green.activated {
-  background-color: #a0ea00;
-  transform: translateY(10px);
+.yellow {
+  background-color: #eab308;
 }
 
-.pad-yellow {
-  border-bottom-right-radius: 200px;
-  background-color: yellow;
+.blue {
+  background-color: #3b82f6;
 }
 
-.pad-yellow:hover,
-.pad-yellow:focus {
-  background-color: #ffb900;
-  transform: rotate(5deg);
+.pad.active {
+  opacity: 1;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+  transform: scale(1.06);
 }
 
-.pad-yellow:active,
-.pad-yellow.activated {
-  background-color: #ffca3d;
-  transform: translateY(10px);
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
-.pad-blue {
-  border-bottom-left-radius: 200px;
-  background-color: blue;
+.controls button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
 }
 
-.pad-blue:hover,
-.pad-blue:focus {
-  background-color: #139ddd;
-  transform: rotate(5deg);
+.controls button:hover {
+  transform: translateY(-2px);
+  background-color: #e5e7eb;
 }
 
-.pad-blue:active,
-.pad-blue.activated {
-  background-color: #2bbcff;
-  transform: translateY(10px);
+.message {
+  font-size: 1.1rem;
+  min-height: 24px;
+  color: #f9fafb;
 }
 
-.hidden {
-  display: none;
-}
+@media (max-width: 480px) {
+  .board {
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: repeat(2, 130px);
+  }
 
-.unclickable {
-  pointer-events: none;
+  h1 {
+    font-size: 2rem;
+  }
 }
