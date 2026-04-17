@@ -1,10 +1,10 @@
-# 🎮 Simon Says Game
+# 🌴🎮 Simon Says – Beach Edition
 
 ## 📌 Overview
 
-This project is a web-based **Simon Says memory game** built using HTML, CSS, and JavaScript. The game challenges players to memorize and repeat an increasingly long sequence of colors. Each round adds a new step to the pattern, testing the player's memory and focus.
+This project is a web-based **Simon Says memory game** built using HTML, CSS, and JavaScript. The game challenges players to memorize and repeat an increasingly long sequence of colors.
 
-This capstone demonstrates core front-end development skills including DOM manipulation, event handling, and game logic implementation.
+This version features a **custom beach-themed design**, a fun **Pacifico font**, and a visually engaging interface to enhance the user experience.
 
 ---
 
@@ -16,41 +16,55 @@ This capstone demonstrates core front-end development skills including DOM manip
 
 ## 🧠 How the Game Works
 
-1. Click the **Start** button to begin the game.
+1. Click the **Start** button to begin.
 2. The computer will highlight a sequence of colored pads.
-3. Watch the pattern carefully.
-4. Repeat the sequence by clicking the pads in the same order.
-5. Each round adds a new color to the sequence.
-6. If you make a mistake, the game ends and resets.
+3. Watch the sequence carefully.
+4. Repeat the pattern by clicking the pads in the same order.
+5. Each round adds a new step to the sequence.
+6. If you click the wrong color, the game ends and resets.
 
 ---
 
 ## ✨ Features
 
-* Interactive color pads with visual feedback
-* Random sequence generation each round
-* Progressive difficulty (sequence grows each round)
-* Game state tracking (rounds, sequences, player input)
-* Clear user instructions and status updates
-* Responsive layout for desktop and mobile
+* 🎮 Interactive Simon Says gameplay
+* 🔁 Random sequence generation each round
+* 📈 Increasing difficulty as rounds progress
+* 🌴 Custom beach background design
+* 🎨 Fun **Pacifico font** for enhanced visual style
+* ✨ Glow and animation effects for better user experience
+* 📱 Responsive layout for mobile and desktop
+
+---
+
+## 🎨 Design & Creativity (US-06)
+
+This project includes several custom design elements to enhance originality:
+
+* Beach-themed background for a unique visual experience
+* Custom Google Font (**Pacifico**) for a fun, playful title
+* Animated heading with floating effect
+* Glow effects on pads for better interaction feedback
+* Dark overlay for improved readability
 
 ---
 
 ## 🛠️ Technologies Used
 
 * **HTML5** – semantic structure
-* **CSS3** – styling, layout, and responsiveness
+* **CSS3** – styling, animations, responsiveness
 * **JavaScript (ES6)** – game logic and interactivity
 
 ---
 
 ## 🧩 Key Concepts Demonstrated
 
-* DOM selection and manipulation
-* Event listeners and event delegation
+* DOM manipulation
+* Event handling
 * Arrays and sequence tracking
-* Conditional logic and state management
-* Timers (`setTimeout`) for animations and sequencing
+* Conditional logic
+* Timers (`setTimeout`) for sequencing
+* State management for game flow
 
 ---
 
@@ -70,25 +84,38 @@ js-dev-final-capstone-starter-simon-says/
 
 ## 🧪 Testing & Development
 
-This project follows a structured starter format where functions and DOM elements are connected to predefined selectors. The implementation ensures compatibility with automated testing and expected behaviors.
+This project was built using a starter structure and enhanced to meet all functionality requirements. All core game logic has been implemented and tested through interaction and gameplay.
+
+---
+
+## 📸 Screenshots
+
+*(Add your screenshots here)*
+
+Example:
+
+```
+![Game Start](./images/screenshot1.png)
+![Gameplay](./images/screenshot2.png)
+```
 
 ---
 
 ## 📚 Resources Used
 
-* AI tools for debugging and code optimization
-* YouTube for educational walkthroughs and concept reinforcement
+* AI tools for debugging and code refinement
+* YouTube for learning and walkthrough support
 * Replit for testing and practicing JavaScript logic
 
 ---
 
 ## 🔧 Future Improvements
 
-* Add sound toggle controls
-* Store high scores using `localStorage`
-* Add difficulty selection UI
-* Improve animations and transitions
-* Add accessibility enhancements (keyboard support, ARIA roles)
+* 🔊 Add sound toggle option
+* 💾 Store high score using localStorage
+* 🎯 Add difficulty selection UI
+* 🎵 Add background music / ocean sounds
+* ♿ Improve accessibility (keyboard controls, ARIA labels)
 
 ---
 
@@ -98,13 +125,13 @@ This project follows a structured starter format where functions and DOM element
 
 * Front-End Developer (in progress)
 * Background in Financial Services & Treasury Management
-* Passion for building interactive and user-friendly web applications
+* Passion for building interactive and visually engaging web applications
 
 ---
 
 ## 📌 Final Notes
 
-This project represents the culmination of front-end development skills learned throughout the program. It highlights the ability to build a fully functional, interactive application from a structured starter codebase.
+This capstone project demonstrates the ability to build a fully functional, interactive web application while also incorporating creative design elements. It reflects both technical skills and user experience considerations.
 
 ---
 
