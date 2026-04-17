@@ -15,13 +15,11 @@ body {
 
 .game {
   text-align: center;
-  width: 90%;
-  max-width: 520px;
 }
 
 .js-heading {
-  margin-bottom: 20px;
   font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .start-button {
@@ -30,36 +28,28 @@ body {
   border-radius: 10px;
   background: white;
   color: #111827;
-  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .status {
-  font-size: 1.1rem;
-  min-height: 24px;
   margin-bottom: 20px;
 }
 
 .pad-container {
   display: grid;
-  grid-template-columns: repeat(2, 160px);
-  grid-template-rows: repeat(2, 160px);
-  gap: 16px;
+  grid-template-columns: repeat(2, 150px);
+  gap: 15px;
   justify-content: center;
 }
 
 .pad {
-  border: none;
+  height: 150px;
   border-radius: 20px;
-  cursor: pointer;
+  border: none;
   opacity: 0.85;
-  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
-}
-
-.pad:hover {
-  transform: scale(1.03);
+  cursor: pointer;
 }
 
 .pad-red {
@@ -80,8 +70,7 @@ body {
 
 .activated {
   opacity: 1;
-  transform: scale(1.06);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
 }
 
 .hidden {
@@ -90,15 +79,4 @@ body {
 
 .unclickable {
   pointer-events: none;
-}
-
-@media (max-width: 480px) {
-  .pad-container {
-    grid-template-columns: repeat(2, 130px);
-    grid-template-rows: repeat(2, 130px);
-  }
-
-  .js-heading {
-    font-size: 2rem;
-  }
 }
