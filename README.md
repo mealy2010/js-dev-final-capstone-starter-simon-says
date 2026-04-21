@@ -131,5 +131,5 @@ The GitHub commit history reflects the progression of the project from setup thr
 <img width="937" height="1503" alt="capstone" src="https://github.com/user-attachments/assets/bd24efa0-25bb-47bc-8762-02ab06f84ae5" />
 
 
-![Git Commit History](assets/git-history.png)
+
 
